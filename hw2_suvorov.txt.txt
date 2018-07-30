@@ -1,0 +1,10 @@
+Andrey Suvorov.
+
+The memory is kept local throughout the program so that function was no utilized. 
+Declaring the arrays in a static manner makes the program too hard to maintain as well as runs into a segmentation fault problem.
+
+Since there are no function calls that are not library functions inlining was not used.
+
+There were no elements being passed into any function therefore there was no reason to pass the pointer instead of the element itself.
+There was a consideration to use static array declaration instead of dynamic but that has not improved the performance beyonde a doubt nor are any of the declarations done inside the loops so this was not used.
+Moreover, the arrays that were used were one dimentional arrays.
